@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_user_role">
+    <sys_user_role action="INSERT_OR_UPDATE">
+        <assignable_by/>
+        <can_delegate>true</can_delegate>
+        <description>Default user role</description>
+        <elevated_privilege>false</elevated_privilege>
+        <federated_id>mmchGHdirGlPn1HEOvA/mTj1JmyLzhuaXv1FT+l5HWA=</federated_id>
+        <grantable>true</grantable>
+        <includes_roles/>
+        <name>x_1520874_teleco_0.user</name>
+        <scoped_admin>false</scoped_admin>
+        <suffix>user</suffix>
+        <sys_class_name>sys_user_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-06 15:42:42</sys_created_on>
+        <sys_id>323ecdeb83b98310d92ca270ceaad3dd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1520874_teleco_0.user</sys_name>
+        <sys_package display_value="Telecom Incident Management" source="x_1520874_teleco_0">2e3ecdeb83b98310d92ca270ceaad3a6</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Telecom Incident Management">2e3ecdeb83b98310d92ca270ceaad3a6</sys_scope>
+        <sys_update_name>sys_user_role_323ecdeb83b98310d92ca270ceaad3dd</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-06 15:42:42</sys_updated_on>
+    </sys_user_role>
+</record_update>
