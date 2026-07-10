@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_number">
+    <sys_number action="INSERT_OR_UPDATE">
+        <category display_value="" name="x_1520874_teleco_0_x_telecom_incident">x_1520874_teleco_0_x_telecom_incident</category>
+        <maximum_digits>4</maximum_digits>
+        <number>1000</number>
+        <prefix>TINC</prefix>
+        <sys_class_name>sys_number</sys_class_name>
+        <sys_created_by>haroon.saleh</sys_created_by>
+        <sys_created_on>2026-07-10 12:48:21</sys_created_on>
+        <sys_id>37ac4df8834a0f10d92ca270ceaad33e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>TINC</sys_name>
+        <sys_package display_value="Telecom Incident Management" source="x_1520874_teleco_0">2e3ecdeb83b98310d92ca270ceaad3a6</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Telecom Incident Management">2e3ecdeb83b98310d92ca270ceaad3a6</sys_scope>
+        <sys_update_name>sys_number_37ac4df8834a0f10d92ca270ceaad33e</sys_update_name>
+        <sys_updated_by>haroon.saleh</sys_updated_by>
+        <sys_updated_on>2026-07-10 12:48:21</sys_updated_on>
+    </sys_number>
+</record_update>

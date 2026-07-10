@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" db_object_id="135b8178834a0f10d92ca270ceaad323" extends="task" label="Telecom Incident" max_length="40" name="x_1520874_teleco_0_x_telecom_incident" type="collection">
+        <element label="Estimated Restoration Time" max_length="40" name="estimated_restoration_time" type="calendar_date_time"/>
+        <element choice="1" label="Network Technology" max_length="40" name="network_technology" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="4G/LTE" value="3"/>
+                <element inactive_on_update="false" label="Fiber Optic" value="5"/>
+                <element inactive_on_update="false" label="Copper" value="0"/>
+                <element inactive_on_update="false" label="5G" value="4"/>
+                <element inactive_on_update="false" label="Microwave" value="2"/>
+                <element inactive_on_update="false" label="Satellite" value="1"/>
+            </choice>
+        </element>
+        <element label="Affected Network Element" max_length="32" name="affected_network_element" reference="cmdb_ci" type="reference"/>
+        <element choice="1" label="Outage Scale" max_length="40" name="outage_scale" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Street Level" value="1"/>
+                <element inactive_on_update="false" label="National Outage" value="3"/>
+                <element inactive_on_update="false" label="Single Subscriber" value="0"/>
+                <element inactive_on_update="false" label="City Level" value="2"/>
+            </choice>
+        </element>
+    </element>
+</database>

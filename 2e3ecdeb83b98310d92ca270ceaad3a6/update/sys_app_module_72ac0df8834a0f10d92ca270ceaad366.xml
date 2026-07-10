@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module">
+    <sys_app_module action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <application display_value="Telecom Incident">72d2bf1083ce4b10d92ca270ceaad397</application>
+        <assessment/>
+        <device_type/>
+        <filter/>
+        <hint/>
+        <homepage/>
+        <image/>
+        <link_type>LIST</link_type>
+        <map_page/>
+        <mobile_title>Telecom Incidents</mobile_title>
+        <mobile_view_name>Mobile</mobile_view_name>
+        <name>x_1520874_teleco_0_x_telecom_incident</name>
+        <order/>
+        <override_menu_roles>false</override_menu_roles>
+        <query/>
+        <report/>
+        <require_confirmation>true</require_confirmation>
+        <roles>x_1520874_teleco_0.telecom_incident_user</roles>
+        <sys_class_name>sys_app_module</sys_class_name>
+        <sys_created_by>haroon.saleh</sys_created_by>
+        <sys_created_on>2026-07-10 12:48:17</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>72ac0df8834a0f10d92ca270ceaad366</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Telecom Incidents</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Telecom Incident Management" source="x_1520874_teleco_0">2e3ecdeb83b98310d92ca270ceaad3a6</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Telecom Incident Management">2e3ecdeb83b98310d92ca270ceaad3a6</sys_scope>
+        <sys_update_name>sys_app_module_72ac0df8834a0f10d92ca270ceaad366</sys_update_name>
+        <sys_updated_by>haroon.saleh</sys_updated_by>
+        <sys_updated_on>2026-07-10 12:48:17</sys_updated_on>
+        <timeline_page/>
+        <title>Telecom Incidents</title>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+        <window_name/>
+    </sys_app_module>
+</record_update>
