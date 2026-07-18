@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_module">
+    <sys_ui_module action="DELETE">
+        <active>true</active>
+        <application/>
+        <filter/>
+        <name>Telecom Incidents</name>
+        <order/>
+        <path/>
+        <path_relative_to_root>false</path_relative_to_root>
+        <roles>public</roles>
+        <sys_class_name>sys_ui_module</sys_class_name>
+        <sys_created_by>haroon.saleh</sys_created_by>
+        <sys_created_on>2026-07-10 12:48:17</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>7aac0df8834a0f10d92ca270ceaad36d</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Telecom Incidents</sys_name>
+        <sys_package display_value="Telecom Incident Management" source="x_1520874_teleco_0">2e3ecdeb83b98310d92ca270ceaad3a6</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Telecom Incident Management">2e3ecdeb83b98310d92ca270ceaad3a6</sys_scope>
+        <sys_update_name>sys_ui_module_7aac0df8834a0f10d92ca270ceaad36d</sys_update_name>
+        <sys_updated_by>haroon.saleh</sys_updated_by>
+        <sys_updated_on>2026-07-17 16:24:24</sys_updated_on>
+        <table>x_1520874_teleco_0_x_telecom_incident</table>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+    </sys_ui_module>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Telecom Incident Management">2e3ecdeb83b98310d92ca270ceaad3a6</application>
+        <file_path/>
+        <instance_id>62322a473b67cad0a36804e0b5e45a11</instance_id>
+        <instance_name>dev279471</instance_name>
+        <name>sys_ui_module_7aac0df8834a0f10d92ca270ceaad36d</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_module"><sys_ui_module action="INSERT_OR_UPDATE"><active>true</active><application/><filter/><name>Telecom Incidents</name><order/><path/><path_relative_to_root>false</path_relative_to_root><roles>public</roles><sys_class_name>sys_ui_module</sys_class_name><sys_created_by>haroon.saleh</sys_created_by><sys_created_on>2026-07-10 12:48:17</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>7aac0df8834a0f10d92ca270ceaad36d</sys_id><sys_mod_count>1</sys_mod_count><sys_name>Telecom Incidents</sys_name><sys_package display_value="Telecom Incident Management" source="x_1520874_teleco_0">2e3ecdeb83b98310d92ca270ceaad3a6</sys_package><sys_policy/><sys_scope display_value="Telecom Incident Management">2e3ecdeb83b98310d92ca270ceaad3a6</sys_scope><sys_update_name>sys_ui_module_7aac0df8834a0f10d92ca270ceaad36d</sys_update_name><sys_updated_by>haroon.saleh</sys_updated_by><sys_updated_on>2026-07-17 16:24:24</sys_updated_on><table>x_1520874_teleco_0_x_telecom_incident</table><uncancelable>false</uncancelable><view_name/></sys_ui_module></record_update>]]></payload>
+        <payload_hash>-152572510</payload_hash>
+        <record_name>Telecom Incidents</record_name>
+        <reverted_from/>
+        <source>d78f31c783c6c710e9facdc6feaad3e9</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>haroon.saleh</sys_created_by>
+        <sys_created_on>2026-07-17 16:24:24</sys_created_on>
+        <sys_id>74410a8b83c6c710e9facdc6feaad3c8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19f70e4b56a0000001</sys_recorded_at>
+        <sys_updated_by>haroon.saleh</sys_updated_by>
+        <sys_updated_on>2026-07-17 16:24:24</sys_updated_on>
+        <type>Module</type>
+        <update_guid>74410a8ba0c6c710fddb7e28a18b10c7</update_guid>
+        <update_guid_history>74410a8ba0c6c710fddb7e28a18b10c7:-152572510,5968310b4a86c710310e90e9d6059c7a:-687449448</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>haroon.saleh</sys_created_by>
+        <sys_created_on>2026-07-17 16:24:53</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_module">sys_ui_module</sys_db_object>
+        <sys_id>23775ee9632c47218720e5d77f46bf99</sys_id>
+        <sys_metadata>7aac0df8834a0f10d92ca270ceaad36d</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Telecom Incidents</sys_name>
+        <sys_package display_value="Telecom Incident Management" source="x_1520874_teleco_0">2e3ecdeb83b98310d92ca270ceaad3a6</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Telecom Incident Management">2e3ecdeb83b98310d92ca270ceaad3a6</sys_scope>
+        <sys_scope_delete display_value="">0b50a1ff85d043b08d9e67c80a39e100</sys_scope_delete>
+        <sys_update_name>sys_ui_module_7aac0df8834a0f10d92ca270ceaad36d</sys_update_name>
+        <sys_update_version display_value="sys_ui_module_7aac0df8834a0f10d92ca270ceaad36d">74410a8b83c6c710e9facdc6feaad3c8</sys_update_version>
+        <sys_updated_by>haroon.saleh</sys_updated_by>
+        <sys_updated_on>2026-07-17 16:24:53</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
