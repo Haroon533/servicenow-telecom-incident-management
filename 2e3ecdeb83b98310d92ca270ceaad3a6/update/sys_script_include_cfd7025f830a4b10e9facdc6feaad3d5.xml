@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_1520874_teleco_0.TelecomIncidentUtils</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>TelecomIncidentUtils</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var TelecomIncidentUtils = Class.create();
+TelecomIncidentUtils.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+
+    /**
+     * Fetches the location and category of a given Configuration Item (CI).
+     * Called asynchronously from the Client Script to prevent UI freezing.
+     * 
+     * @returns {string} JSON stringified object containing location and category.
+     */
+
+    getNetworkElementDetails: function() {
+		// 1. Retrieve the sys_id passed from the Client Script
+        var ciId = this.getParameter('sysparm_ci_id');
+		// 2. Initialize the payload with default safe values
+        var result = {
+            location: 'Unknown Location',
+            category: 'Unknown Category'
+        };
+		// 3. Guard Clause: If sys_id is missing, abort DB query and return defaults
+        if (!ciId) {
+            return JSON.stringify(result);
+        }
+        var ciGr = new GlideRecord('cmdb_ci');
+        if (ciGr.get(ciId)) {
+			// Use getDisplayValue() for reference fields to get readable names
+            result.location = ciGr.getDisplayValue('location') || 'No Location Assigned';
+            result.category = ciGr.getValue('category') || 'No Category Assigned';
+        }
+
+        return JSON.stringify(result);
+    },
+    type: 'TelecomIncidentUtils'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>haroon.saleh</sys_created_by>
+        <sys_created_on>2026-07-18 11:37:08</sys_created_on>
+        <sys_id>cfd7025f830a4b10e9facdc6feaad3d5</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>TelecomIncidentUtils</sys_name>
+        <sys_package display_value="Telecom Incident Management" source="x_1520874_teleco_0">2e3ecdeb83b98310d92ca270ceaad3a6</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Telecom Incident Management">2e3ecdeb83b98310d92ca270ceaad3a6</sys_scope>
+        <sys_update_name>sys_script_include_cfd7025f830a4b10e9facdc6feaad3d5</sys_update_name>
+        <sys_updated_by>haroon.saleh</sys_updated_by>
+        <sys_updated_on>2026-07-18 12:34:05</sys_updated_on>
+    </sys_script_include>
+</record_update>
