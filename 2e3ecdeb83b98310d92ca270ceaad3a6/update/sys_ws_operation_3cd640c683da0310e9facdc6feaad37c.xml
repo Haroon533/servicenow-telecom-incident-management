@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ws_operation">
+    <sys_ws_operation action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <consumes>application/json,application/xml,text/xml</consumes>
+        <consumes_customized>false</consumes_customized>
+        <default_operation_uri/>
+        <enforce_acl/>
+        <http_method>POST</http_method>
+        <name>Create Incident</name>
+        <operation_script><![CDATA[(function process(/*RESTAPIRequest*/ request, /*RESTAPIResponse*/ response) {
+
+/**
+     * Requirement: Secure Inbound API to create Telecom Incidents for Bank ABC.
+     */
+
+    var bank_ABC_Comp_ID = gs.getProperty('x_1520874_teleco_0.bank_ABC_Comp_ID');
+    try {
+        var requestBody = request.body.data;
+        
+        if (!requestBody.short_description || 
+            !requestBody.network_node || 
+            !requestBody.outage_scale || 
+            !requestBody.network_technology || 
+            !requestBody.affected_network_element ||
+			!requestBody.priority) {
+            
+            response.setStatus(400); 
+            return { 
+                "status": "error", 
+                "message": "Missing mandatory fields. Required: short_description, network_node, outage_scale, network_technology, affected_network_element ,priority." 
+            };
+        }
+
+        var incGr = new GlideRecord('x_1520874_teleco_0_x_telecom_incident');
+        incGr.initialize();
+        
+        incGr.short_description = "Automated Alert: " + requestBody.short_description;
+        incGr.description = "System detected an issue on node: " + requestBody.network_node;
+        
+        incGr.company = bank_ABC_Comp_ID;
+        
+		incGr.outage_scale = requestBody.outage_scale; 
+        incGr.network_technology = requestBody.network_technology;
+		incGr.affected_network_element = requestBody.affected_network_element;
+		incGr.priority = requestBody.priority;
+        var incSysId = incGr.insert();
+
+        response.setStatus(201); 
+        return {
+            "status": "success",
+            "incident_number": incGr.number.toString(),
+            "message": "Telecom incident successfully created securely for Bank ABC."
+        };
+
+    } catch (ex) {
+        //  ERROR HANDLING & LOGGING (System resilience)
+        gs.error('Bank ABC API Error: ' + ex.message);
+        response.setStatus(500); // 500 Internal Server Error
+        return {
+            "status": "error",
+            "message": "An internal server error occurred while processing the request."
+        };
+    }
+})(request, response);]]></operation_script>
+        <operation_uri>/api/x_1520874_teleco_0/bank_abc_integration/incident</operation_uri>
+        <produces>application/json,application/xml,text/xml</produces>
+        <produces_customized>false</produces_customized>
+        <relative_path>/incident</relative_path>
+        <request_example/>
+        <requires_acl_authorization>true</requires_acl_authorization>
+        <requires_authentication>true</requires_authentication>
+        <requires_snc_internal_role>true</requires_snc_internal_role>
+        <short_description/>
+        <sys_class_name>sys_ws_operation</sys_class_name>
+        <sys_created_by>haroon.saleh</sys_created_by>
+        <sys_created_on>2026-07-26 15:22:34</sys_created_on>
+        <sys_id>3cd640c683da0310e9facdc6feaad37c</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Create Incident</sys_name>
+        <sys_package display_value="Telecom Incident Management" source="x_1520874_teleco_0">2e3ecdeb83b98310d92ca270ceaad3a6</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Telecom Incident Management">2e3ecdeb83b98310d92ca270ceaad3a6</sys_scope>
+        <sys_update_name>sys_ws_operation_3cd640c683da0310e9facdc6feaad37c</sys_update_name>
+        <sys_updated_by>haroon.saleh</sys_updated_by>
+        <sys_updated_on>2026-07-28 08:05:34</sys_updated_on>
+        <web_service_definition display_value="Bank ABC Integration">abb7037983d20310e9facdc6feaad3a3</web_service_definition>
+        <web_service_version/>
+    </sys_ws_operation>
+</record_update>
