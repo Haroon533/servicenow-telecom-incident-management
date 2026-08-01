@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>be3198ef835e0f10e9facdc6feaad3e7</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_user_group_type">
+    <sys_user_group_type action="INSERT_OR_UPDATE">
+        <description/>
+        <name>Telecom Approval</name>
+        <sys_created_by>haroon.saleh</sys_created_by>
+        <sys_created_on>2026-07-31 07:48:19</sys_created_on>
+        <sys_id>be3198ef835e0f10e9facdc6feaad3e7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>haroon.saleh</sys_updated_by>
+        <sys_updated_on>2026-07-31 07:48:19</sys_updated_on>
+    </sys_user_group_type>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>haroon.saleh</sys_created_by>
+        <sys_created_on>2026-07-31 08:00:56</sys_created_on>
+        <sys_id>9a4494e7839e0f10e9facdc6feaad36d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Telecom Approval</sys_name>
+        <sys_package display_value="Telecom Incident Management" source="x_1520874_teleco_0">2e3ecdeb83b98310d92ca270ceaad3a6</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Telecom Incident Management">2e3ecdeb83b98310d92ca270ceaad3a6</sys_scope>
+        <sys_update_name>sys_metadata_link_9a4494e7839e0f10e9facdc6feaad36d</sys_update_name>
+        <sys_updated_by>haroon.saleh</sys_updated_by>
+        <sys_updated_on>2026-07-31 08:00:56</sys_updated_on>
+        <tablename>sys_user_group_type</tablename>
+    </sys_metadata_link>
+</record_update>
