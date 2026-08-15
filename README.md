@@ -23,4 +23,4 @@ A fully scoped, multi-tenant (Domain Separated) B2B ITSM application engineered 
 
 This README is just a brief summary. To view the complete architectural decisions, backend execution screenshots, data mapping, and edge-case handling, **please read the official project documentation:**
 
-👉 **[Click Here to Download & View the Full Architecture Showcase (PDF)](https://github.com/Haroon533/servicenow-telecom-incident-management/blob/main/ServiceNow%20Architecture%20Showcase_%20End-to-End%20Telecom%20ITSM%20Solution.pdf?raw=true)** 👈
+👉 **[Click Here to Download & View the Full Architecture Showcase (PDF)](https://raw.githubusercontent.com/Haroon533/servicenow-telecom-incident-management/main/ServiceNow%20Architecture%20Showcase_%20End-to-End%20Telecom%20ITSM%20Solution.pdf)** 👈
